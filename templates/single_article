@@ -1,0 +1,46 @@
+<?php
+require("./inc/db.php");
+
+$sql = "SELECT * FROM `article`;";
+$request = $pdo->query($sql);
+$postsList = $request->fetchAll(PDO::FETCH_ASSOC);
+
+$sql = "SELECT * FROM `utilisateur`;";
+$request = $pdo->query($sql);
+$usersList = $request->fetchAll(PDO::FETCH_ASSOC);
+
+function fetch_user(int $id, array $usersList) {
+    foreach ($usersList as $index => $user) {
+        if ($user['id'] == $id) {
+            return $index;
+        }
+    }
+    return -1;
+}
+
+?>
+
+<section>
+    <?php foreach ($postsList as $post) : ?>
+        <?php if ($post["id"] == $_GET["id"]) : ?>
+            <article>
+                <?php
+                $categoryClass = strtolower($post["category"]);
+                ?>
+                <h2 class="<?= $categoryClass ?>"><?= ucfirst($categoryClass) ?></h2>
+                <h1><?= $post["title"] ?></h1>
+                <div>
+                    <h2>
+                        <?php
+                        $userIndex = fetch_user($post["author"], $usersList);
+                        echo ($userIndex !== -1) ? $usersList[$userIndex]['firstname'] : "Unknown";
+                        ?>
+                        le <?= $post["publish_date"] ?>
+                    </h2>
+                </div>
+                <p><?= $post["content"] ?></p>
+                <a href="./index.php">Retour à l'Accueil</a>
+            </article>
+        <?php endif; ?>
+    <?php endforeach; ?>
+</section>

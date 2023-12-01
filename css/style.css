@@ -1,0 +1,27 @@
+main section:last-child article {
+    margin: 0;
+    padding: 2%;
+    border: 0.5px solid rgba(128, 128, 128, 0.408);
+    display: flex;
+    flex-direction: column;
+}
+
+main section:last-child h3,
+main section:last-child h3.news,
+main section:last-child h3.work {
+    font-size: 12px;
+    width: 60px;
+    height: 40%;
+    margin: 0.5rem;
+    text-align: center;
+    padding: 2%;
+}
+
+main section:last-child h3.news {
+    background-color: #98DC62;
+}
+
+main section:last-child h3.work {
+    background-color: #0766F0;
+}
+
