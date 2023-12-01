@@ -7,7 +7,7 @@ main {
 a:hover {
     font-weight: 600;
     text-decoration: underline;
-    transition: color 0.3s ease; /* Ajout d'une transition pour une expérience utilisateur plus fluide */
+    transition: color 0.3s ease; 
 }
 
 main section:first-child {
@@ -24,7 +24,7 @@ main section:first-child header h1 {
     margin: 0 0 0 20px;
     font-weight: 400;
     text-decoration: underline;
-    text-decoration-color: rgb(43, 76, 242); /* Utilisation de text-decoration-color */
+    text-decoration-color: rgb(43, 76, 242);
     margin-left: 8rem;
 }
 
@@ -35,7 +35,7 @@ main section:first-child div {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    margin: 0.5rem; /* Simplification de la marge */
+    margin: 0.5rem;
 }
 
 main section:last-child {
@@ -46,7 +46,7 @@ main section:last-child {
 
 main section:last-child button {
     width: 10rem;
-    transition: width 0.3s ease; /* Ajout d'une transition pour une expérience utilisateur plus fluide */
+    transition: width 0.3s ease;
 }
 
 main section:last-child button:hover {

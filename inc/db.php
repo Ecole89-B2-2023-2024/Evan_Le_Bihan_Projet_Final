@@ -1,6 +1,6 @@
 <?php
 
-$dsn="mysql:dbname=php2;host=localhost;charset=utf8";
+$dsn="mysql:dbname=baseprog;host=localhost;charset=utf8";
 $username="root";
 $password="";
 

@@ -4,14 +4,13 @@
         <h3>Éditeur du site</h3>
         <p>Nom de l'entreprise : [Nom de l'entreprise]</p>
         <p>Adresse de l'entreprise : [Adresse de l'entreprise]</p>
-        <!-- Ajoutez d'autres informations ici -->
 
         <h3>Directeur de la publication</h3>
         <p>Nom du directeur de la publication : [Nom du directeur de la publication]</p>
 
         <h3>Hébergeur du site</h3>
         <p>Nom de l'hébergeur : [Nom de l'hébergeur]</p>
-        <!-- Ajoutez d'autres informations sur l'hébergeur ici -->
+>
     </section>
 
     <section>
@@ -19,13 +18,11 @@
 
         <h3>Droits d'auteur</h3>
         <p>L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle.</p>
-        <!-- Ajoutez d'autres informations sur les droits d'auteur ici -->
+
 
         <h3>Marques</h3>
         <p>Les marques citées sur ce site sont déposées par les sociétés qui en sont propriétaires.</p>
     </section>
-
-    <!-- Ajoutez d'autres sections pour la collecte des données, les liens externes, la responsabilité, etc. -->
 
 </body>
 </html>
@@ -47,7 +44,7 @@ Copy code
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentions Légales</title>
-    <!-- Ajoutez d'autres balises meta et les liens vers vos fichiers CSS si nécessaire -->
+    
 </head>
 <body>
 

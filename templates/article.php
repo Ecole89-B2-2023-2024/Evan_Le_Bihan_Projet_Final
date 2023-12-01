@@ -17,7 +17,7 @@
     // var_dump($_GET);
     $erreur = [];
     $message = [];
-    // test prenom
+    
     if (isset($_POST['title']) && !empty($_POST['title']) && isset($_POST['content']) && !empty($_POST['content'])) {
         array_push($message, 'ok !');
     } else {

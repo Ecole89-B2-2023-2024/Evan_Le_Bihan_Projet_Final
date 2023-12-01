@@ -1,6 +1,6 @@
 <section>
     <h1>Nous Contacter :</h1>
-    <form method="post" action="traitement.php"> <!-- Assurez-vous de spécifier le bon fichier de traitement PHP -->
+    <form method="post" action="traitement.php">
         <label for="email">Votre adresse mail :</label>
         <input type="email" id="email" name="email" placeholder="name@example.com" required>
 

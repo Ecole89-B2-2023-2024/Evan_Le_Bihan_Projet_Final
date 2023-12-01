@@ -7,14 +7,14 @@
         <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
         <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
         
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
     </form>
 
     <?php
     $erreur = [];
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        // Validation côté serveur
+
         if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) &&
             preg_match('/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/', $_POST['password'])) {
 
